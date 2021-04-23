@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace BDRealLibrary
 {
     class Book
     {
+        [ForeignKey("Catgory, Author, Editor")]
         public int BookID { get; set; }
         public Author AuthorID { get; set; }
         public Editor EditorID { get; set; }

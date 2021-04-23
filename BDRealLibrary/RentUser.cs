@@ -12,7 +12,8 @@ namespace BDRealLibrary
         public string NameRentUser { get; set; }
         public string Contact { get; set; }
         public string Adress { get; set; }
-        public DateTime  { get; set; }
-        public bool LivrosDevolver { get; set; }
+
+        public DateTime LastRent { get; set; }
+        public bool BookToGive { get; set; }
     }
 }

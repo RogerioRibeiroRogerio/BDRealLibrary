@@ -9,9 +9,11 @@ namespace BDRealLibrary
 {
     class Catgory
     {
-        [ForeignKey("Catgory")]
+        [ForeignKey("Author, Editor")]
         public int CatgoryID { get; set; }
         public string CatgoryName { get; set; }
+        public Author AuthorID { get; set; }
+        public Editor EditorID { get; set; }
 
     }
 }

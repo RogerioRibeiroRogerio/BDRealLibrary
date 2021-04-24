@@ -19,12 +19,12 @@ namespace BDRealLibrary
 
     class BDRealLIB : DbContext
         {
-            public DbSet<Author> Autores { get; set; }
-            public DbSet<Catgory> Categorias { get; set; }
-            public DbSet<RentBook> Controles { get; set; }
-            public DbSet<Editor> Editoras { get; set; }
-            public DbSet<Book> Livros { get; set; }
-            public DbSet<RentUser> Utentes { get; set; }
+            public DbSet<Author> Authors { get; set; }
+            public DbSet<Catgory> Catgorys { get; set; }
+            public DbSet<RentBook> Controls { get; set; }
+            public DbSet<Editor> Editors { get; set; }
+            public DbSet<Book> Books { get; set; }
+            public DbSet<RentUser> RentUsers { get; set; }
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
